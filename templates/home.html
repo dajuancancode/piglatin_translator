@@ -1,0 +1,32 @@
+{% load static  from staticfiles%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>PigLatin Translator</title>
+        <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    </head>
+    <body>
+        <header class="homeHeader">
+            <nav class="navigation">
+                <h1>PigLatin Translator</h1>
+                <ul class="navbar">
+                    <li class="nav_item">
+                        <a href="{% url 'about' %}" class="nav_link">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1>Translate any text into PigLatin</h1>
+                <p>Have fun with an easy to build project</p>
+            </div>
+        </header>
+        <form action="{% url 'translate' %}">
+            <label for="translate">Enter something to be translate</label><br />
+            <input type="text" name="translation" id="translate"/><br />
+            <input type="submit" value="Translate" />
+        </form>
+    </body>
+</html>

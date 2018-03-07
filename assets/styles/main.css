@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+body{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 75%;
+    border-radius: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileText{
+    width: 75%;
+}
+
+.profileText p{
+    padding: 10px;
+}
+
+.profilePhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('../img/pig.jpg') center center no-repeat fixed;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+form{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    padding: 15px 25px;
+    border: 2px solid #10aded;
+    background: transparent;
+    border-radius: 10px;
+    transition: all ease-in 500ms;
+}
+
+input[type="submit"]:hover{
+    background: #10aded;
+}
+
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #343a40;
+    margin-bottom: 15px;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.nav_item{
+    list-style: none;
+    padding: 15px;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: white;
+}

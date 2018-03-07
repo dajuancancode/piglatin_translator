@@ -1,0 +1,36 @@
+{% load static  from staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PigLatin About</title>
+        <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <h1>About the Translator</h1>
+                <ul class="navbar">
+                    <li class="nav_item">
+                        <a href="{% url 'home' %}" class="nav_link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1>Translate any text into PigLatin</h1>
+                <p>Have fun with an easy to build project</p>
+            </div>
+        </header>
+        <main>
+            <div class="profileText">
+                <p>Hey there! My name is DaJuan Harris, I am a student at Broward College studying for an AA so I can transfer into a computer science program. This translator was built with django, HTML, and CSS. This is not my first website, nor is this my first forray into backend development. This is however, my first time using django, so that is something to celebrate.</p>
+                <p>If you're interested in how this translator works, I'll tell you. So on the homepage, there is a form with two inputs; one text field and one submit button. The form has an action that points to the translate page, so when you click submit, that is where you will be taken. The text field has a name of translation so that I can work with it in the translate view. In the translate view, I take the translation and split the sentence into an array. I then iterate over every word in the loop and perform the act of translating it. <br /> <strong> (If you want to know how pig latin is translated, click this wikipedia <a href="https://en.wikipedia.org/wiki/Pig_Latin">link</a>.) </strong> After translating each word in the array, I join the words back into a sentence. Then I export both the translation and the original text to the translate page for display. </p>
+            </div>
+            <div class="profilePhoto">
+                <img src="{% static 'img/profile.jpg' %}" alt="My Profile Picture">
+            </div>
+        </main>
+    </body>
+</html>
